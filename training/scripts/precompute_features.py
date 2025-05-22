@@ -4,16 +4,12 @@ import librosa
 from tqdm import tqdm
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-from training.utils.config import DATASET_PATH, SAMPLE_RATE, NUM_MEL_BINS, FIXED_LENGTH, N_FFT, HOP_LENGTH, WIN_LENGTH, FMIN, FMAX
+from training.utils.config import COMMANDS, DATASET_PATH, SAMPLE_RATE, NUM_MEL_BINS, FIXED_LENGTH, N_FFT, HOP_LENGTH, WIN_LENGTH, FMIN, FMAX
 
 # 输出路径
 PREPROCESS_DIR = "training/data/preprocessed"
 
 # 获取标签类别
-COMMANDS = sorted([
-    d for d in os.listdir(DATASET_PATH)
-    if os.path.isdir(os.path.join(DATASET_PATH, d)) and not d.startswith("_")
-])
 label_map = {label: idx for idx, label in enumerate(COMMANDS)}
 
 # 遍历所有音频文件
