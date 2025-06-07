@@ -1,0 +1,9 @@
+{
+  "files.encoding": "utf8",
+  "cortex-debug.gdbPath": "/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gdb",
+  "cortex-debug.JLinkGDBServerPath": "/opt/SEGGER/JLink/JLinkGDBServerCLExe",
+  "files.associations": {
+    "cstdint": "c"
+},
+  "C_Cpp.errorSquiggles": "disabled"
+}

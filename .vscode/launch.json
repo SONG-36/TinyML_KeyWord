@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Cortex Debug",
+      "cwd": "${workspaceFolder}",
+      "executable": "out/bin/startup.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "device": "STM32F746ZG",
+      "servertype": "jlink",
+      "runToEntryPoint": "main",
+      "svdFile": "your_svd_path_here.svd",
+      "ipAddress": "10.24.65.197"
+    }
+  ]
+}
